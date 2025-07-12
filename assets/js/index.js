@@ -5,76 +5,418 @@ new Vue({
   data: {
     mapping: {
       maps: {
-        // 1vs1
-        "2x3_Esashi":{name: "Tropic Thunder", mode: 1},
-        "2x3_Gangjin":{name: "Mud fight !", mode: 1},    
-        "2x3_Hwaseong":{name: "Nuclear winter is coming", mode: 1},
-        "2x2_port_Wonsan_Terrestre":{name: "Wonsan harbour", mode: 1},
-        "3x3_Muju":{name: "Plunjing Valley", mode: 1},
-        "2x3_Montagne_1":{name: "Death Row", mode: 1},
-        "2x3_Tohoku_Alt":{name: "Paddy Field", mode: 1},
-        "3x3_Muju_Alt":{name: "Punchbowl", mode: 1},
-        "3x3_Marine_3_Reduite_Terrestre":{name: "Hell in a very small place", mode: 1},
-        "5x3_Marine_1_small_Terrestre":{name: "Strait to the point (small)", mode: 1},
-        "2x2_port_Wonsan":{name: "Wonsan harbour", mode: 1, water: 2},
-        "4x4_Marine_6":{name: "Out of the blue", mode: 1, water: 1},
-        "4x4_Marine_7":{name: "Standoff in Barents", mode: 1, water: 1},
-            
-        // 2vs2
-        "2x3_Boseong":{name: "Apocalipse Imminent", mode: 2},
-        "2x3_Tohoku":{name: "Paddy Field", mode: 2},
-        "2x3_Anbyon":{name: "Hop and Glory", mode: 2},
-        "3x2_Montagne_3":{name: "Chosin Reservoir", mode: 2},
-        "3x2_Taebuko":{name: "Jungle LAW", mode: 2},
-        "3x2_Haenam_Alt":{name: "Operation Chromite", mode: 2},
-        "3x3_Highway_Small":{name: "Highway to Seoul", mode: 2},
-        "3x2_Boryeong_Terrestre":{name: "Gunboat diplomacy", mode: 2},
-        "3x3_Marine_3_Terrestre":{name: "Another D-Day in paradise ", mode: 2},
-        "5x3_Marine_1_small":{name: "Strait to the point (small)", mode: 2, water: 2},
-        "4x4_Marine_10":{name: "Alea Jacta West", mode: 2, water: 1},
-        "4x4_Marine_9":{name: "Bulldogs and Vampires", mode: 2, water: 1},
-            
-        // 3vs3    
-        "3x2_Sangju":{name: "Tough Jungle", mode: 3},
-        "Chongju_Alt":{name: "Wrecks and Rocks", mode: 3},
-        "3x2_Taean":{name: "Bloody Ridge", mode: 3},
-        "2x3_Montagne_2":{name: "Cliff Hanger", mode: 3}, 
-        "3x2_Haenam":{name: "Back to Inchon", mode: 3},
-        "5x3_Marine_1_Terrestre":{name: "Strait to the point", mode: 3},
-        "3x3_Pyeongtaek_Alt":{name: "38th Perpendicular", mode: 3},
-        "3x3_Highway":{name: "Highway to Seoul", mode: 3},
-        "3x3_Thuringer_Wald":{name: "Snake Pit", mode: 3},
-        "3x3_Thuringer_Wald_Alt":{name: "Crossroad", mode: 3},
-        "3x2_Boryeong":{name: "Gunboat Diplomacy", mode: 3, water: 2},
-        "3x3_Marine_3":{name: "Another D-Day in Paradise", mode: 3, water: 2},
-        "4x4_Marine_4":{name: "Atoll Inbound", mode: 3, water: 1},
-        "4x4_Marine_5":{name: "Waterworld", mode: 3, water: 1},
-            
-        //4vs4
-        "4x3_Sangju_Alt":{name: "The Green Mile", mode: 4},
-        "5x3_Marine_1_Alt":{name: "Battle of Yuchalnok Pass", mode: 4},
-        "3x3_Pyeongtaek":{name: "38th Parallel", mode: 4},
-        "3x3_Montagne_4":{name: "A Maze in Japan", mode: 4},
-        "3x3_Chongju":{name: "Korean Rocks", mode: 4},
-        "3x3_Montagne_1":{name: "Cold War Z", mode: 4},
-        "3x3_Gangjin":{name: "Floods", mode: 4},
-        "4x4_ThreeMileIsland":{name: "Sun of Juche", mode: 4},
-        "4x4_ThreeMileIsland_Alt":{name: "Final Meltdown", mode: 4},
-        "4x3_Gjoll":{name: "Heartbreak Ridge", mode: 4},
-        "3x3_Asgard":{name: "The Crown of Crags", mode: 4},
-        "5x3_Marine_1":{name: "Strait to the point", mode: 4, water: 2},
-        "3x3_Marine_2":{name: "Smoke in the water", mode: 4, water: 2},
-            
-        //10vs10
-        "5x3_Asgard_10v10":{name: "Asgard", mode: 10},
-        "5x3_Gjoll_10v10":{name: "Gjoll", mode: 10},
-        "4x4_Russian_Roulette":{name: "Russian Roulette", mode: 10}
+        "_2x2_Hesse_1vs1_CONQ_DUEL": {
+          "name": "_2x2_Hesse_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_2x3_BlackForestStorm_1vs1_CONQ_DUEL": {
+          "name": "_2x3_BlackForestStorm_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_2x3_Death_Row_1vs1_CONQ_TRAINING": {
+          "name": "_2x3_Death_Row_1vs1_CONQ_TRAINING",
+          "mode": 1
+        },
+        "_2x3_Ohmen_1vs1_CONQ_DUEL": {
+          "name": "_2x3_Ohmen_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_2x3_Two_lakes_1vs1_CONQ_DUEL": {
+          "name": "_2x3_Two_lakes_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_2x3_Vertigo_1vs1_CONQ_DUEL": {
+          "name": "_2x3_Vertigo_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_3x3_Airport_1vs1_CONQ_DUEL": {
+          "name": "_3x3_Airport_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_3x3_Kreide_1vs1_CONQ_DUEL": {
+          "name": "_3x3_Kreide_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_3x3_MountRiver_1vs1_CONQ_DUEL": {
+          "name": "_3x3_MountRiver_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_3x3_MountRiver_1vs1_CONQ_TRAINING": {
+          "name": "_3x3_MountRiver_1vs1_CONQ_TRAINING",
+          "mode": 1
+        },
+        "_3x3_UrbanFrontlines_1vs1_CONQ_DUEL": {
+          "name": "_3x3_UrbanFrontlines_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_4x2_Chemical_1vs1_CONQ_DUEL": {
+          "name": "_4x2_Chemical_1vs1_CONQ_DUEL",
+          "mode": 1
+        },
+        "_4x3_geisa_1vs1_CONQ_TRAINING": {
+          "name": "_4x3_geisa_1vs1_CONQ_TRAINING",
+          "mode": 1
+        },
+        "_2x2_Hesse_2vs2_CONQ": {
+          "name": "_2x2_Hesse_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x2_Tension_2vs2_CONQ": {
+          "name": "_2x2_Tension_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x2_Teufelsmoor_2vs2_CONQ": {
+          "name": "_2x2_Teufelsmoor_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x3_Albion_Military_Base_2vs2_CONQ": {
+          "name": "_2x3_Albion_Military_Base_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x3_BlackForestStorm_2vs2_CONQ": {
+          "name": "_2x3_BlackForestStorm_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x3_Death_Row_2vs2_CONQ": {
+          "name": "_2x3_Death_Row_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x3_Death_Row_2vs2_DEST": {
+          "name": "_2x3_Death_Row_2vs2_DEST",
+          "mode": 2
+        },
+        "_2x3_Ripple_2vs2_CONQ": {
+          "name": "_2x3_Ripple_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x3_Ripple_2vs2_DEST": {
+          "name": "_2x3_Ripple_2vs2_DEST",
+          "mode": 2
+        },
+        "_2x3_TwoWays_2vs2_CONQ": {
+          "name": "_2x3_TwoWays_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x3_TwoWays_2vs2_DEST": {
+          "name": "_2x3_TwoWays_2vs2_DEST",
+          "mode": 2
+        },
+        "_2x3_Two_lakes_2vs2_CONQ": {
+          "name": "_2x3_Two_lakes_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x3_Two_lakes_2vs2_DEST": {
+          "name": "_2x3_Two_lakes_2vs2_DEST",
+          "mode": 2
+        },
+        "_2x3_Vertigo_2vs2_CONQ": {
+          "name": "_2x3_Vertigo_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x3_Vertigo_2vs2_DEST": {
+          "name": "_2x3_Vertigo_2vs2_DEST",
+          "mode": 2
+        },
+        "_3x3_MountRiver_2vs2_CONQ_ASSAULT": {
+          "name": "_3x3_MountRiver_2vs2_CONQ_ASSAULT",
+          "mode": 2
+        },
+        "_3x3_UrbanFrontlines_2vs2_CONQ": {
+          "name": "_3x3_UrbanFrontlines_2vs2_CONQ",
+          "mode": 2
+        },
+        "_4x2_Chemical_2vs2_CONQ_TRAINING": {
+          "name": "_4x2_Chemical_2vs2_CONQ_TRAINING",
+          "mode": 2
+        },
+        "_5x2_Loop_2vs2_CONQ": {
+          "name": "_5x2_Loop_2vs2_CONQ",
+          "mode": 2
+        },
+        "_2x3_TwoWays_3vs3_CONQ": {
+          "name": "_2x3_TwoWays_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Airport_3vs3_CONQ": {
+          "name": "_3x3_Airport_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Airport_3vs3_DEST": {
+          "name": "_3x3_Airport_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Cyrus_3vs3_CONQ": {
+          "name": "_3x3_Cyrus_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Cyrus_3vs3_DEST": {
+          "name": "_3x3_Cyrus_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_DangerHills_3vs3_CONQ": {
+          "name": "_3x3_DangerHills_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_DangerHills_3vs3_DEST": {
+          "name": "_3x3_DangerHills_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Eiche_3vs3_CONQ": {
+          "name": "_3x3_Eiche_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Eiche_3vs3_DEST": {
+          "name": "_3x3_Eiche_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Factory_3vs3_CONQ": {
+          "name": "_3x3_Factory_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Factory_3vs3_DEST": {
+          "name": "_3x3_Factory_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Kreide_3vs3_CONQ": {
+          "name": "_3x3_Kreide_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Kreide_3vs3_DEST": {
+          "name": "_3x3_Kreide_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_MountRiver_3vs3_CONQ": {
+          "name": "_3x3_MountRiver_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_MountRiver_3vs3_DEST": {
+          "name": "_3x3_MountRiver_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Railway_3vs3_CONQ": {
+          "name": "_3x3_Railway_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Railway_3vs3_DEST": {
+          "name": "_3x3_Railway_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Rift_3vs3_CONQ": {
+          "name": "_3x3_Rift_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Rift_3vs3_DEST": {
+          "name": "_3x3_Rift_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Rocks_3vs3_CONQ": {
+          "name": "_3x3_Rocks_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Rocks_3vs3_CONQ_ASSAULT": {
+          "name": "_3x3_Rocks_3vs3_CONQ_ASSAULT",
+          "mode": 3
+        },
+        "_3x3_Rocks_3vs3_DEST": {
+          "name": "_3x3_Rocks_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Stoneware_3vs3_CONQ": {
+          "name": "_3x3_Stoneware_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Stoneware_3vs3_DEST": {
+          "name": "_3x3_Stoneware_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Surrounded_3vs3_CONQ": {
+          "name": "_3x3_Surrounded_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Surrounded_3vs3_DEST": {
+          "name": "_3x3_Surrounded_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_TripleStrike_3vs3_CONQ": {
+          "name": "_3x3_TripleStrike_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_TripleStrike_3vs3_DEST": {
+          "name": "_3x3_TripleStrike_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_TwinCities_3vs3_CONQ": {
+          "name": "_3x3_TwinCities_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_TwinCities_3vs3_DEST": {
+          "name": "_3x3_TwinCities_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_UrbanFrontlines_3vs3_CONQ": {
+          "name": "_3x3_UrbanFrontlines_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_UrbanFrontlines_3vs3_DEST": {
+          "name": "_3x3_UrbanFrontlines_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Valley_3vs3_CONQ": {
+          "name": "_3x3_Valley_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Valley_3vs3_DEST": {
+          "name": "_3x3_Valley_3vs3_DEST",
+          "mode": 3
+        },
+        "_3x3_Volcano_3vs3_CONQ": {
+          "name": "_3x3_Volcano_3vs3_CONQ",
+          "mode": 3
+        },
+        "_3x3_Volcano_3vs3_DEST": {
+          "name": "_3x3_Volcano_3vs3_DEST",
+          "mode": 3
+        },
+        "_4x3_Cliff_3vs3_CONQ": {
+          "name": "_4x3_Cliff_3vs3_CONQ",
+          "mode": 3
+        },
+        "_4x2_Chemical_4vs4_CONQ": {
+          "name": "_4x2_Chemical_4vs4_CONQ",
+          "mode": 4
+        },
+        "_4x2_Chemical_4vs4_DEST": {
+          "name": "_4x2_Chemical_4vs4_DEST",
+          "mode": 4
+        },
+        "_4x2_DarkStream_4vs4_CONQ": {
+          "name": "_4x2_DarkStream_4vs4_CONQ",
+          "mode": 4
+        },
+        "_3x3_Airport_10vs10_CONQ": {
+          "name": "_3x3_Airport_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Airport_10vs10_DEST": {
+          "name": "_3x3_Airport_10vs10_DEST",
+          "mode": 10
+        },
+        "_3x3_Cyrus_10vs10_CONQ": {
+          "name": "_3x3_Cyrus_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Cyrus_10vs10_DEST": {
+          "name": "_3x3_Cyrus_10vs10_DEST",
+          "mode": 10
+        },
+        "_3x3_DangerHills_10vs10_CONQ": {
+          "name": "_3x3_DangerHills_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_DangerHills_10vs10_DEST": {
+          "name": "_3x3_DangerHills_10vs10_DEST",
+          "mode": 10
+        },
+        "_3x3_Factory_10vs10_CONQ": {
+          "name": "_3x3_Factory_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_IronWaters_10vs10_CONQ": {
+          "name": "_3x3_IronWaters_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_IronWaters_10vs10_DEST": {
+          "name": "_3x3_IronWaters_10vs10_DEST",
+          "mode": 10
+        },
+        "_3x3_Kreide_10vs10_CONQ": {
+          "name": "_3x3_Kreide_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Kreide_10vs10_DEST": {
+          "name": "_3x3_Kreide_10vs10_DEST",
+          "mode": 10
+        },
+        "_3x3_Railway_10vs10_CONQ": {
+          "name": "_3x3_Railway_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Rift_10vs10_CONQ": {
+          "name": "_3x3_Rift_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Rocks_10vs10_CONQ": {
+          "name": "_3x3_Rocks_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Rocks_10vs10_DEST": {
+          "name": "_3x3_Rocks_10vs10_DEST",
+          "mode": 10
+        },
+        "_3x3_Stoneware_10vs10_CONQ": {
+          "name": "_3x3_Stoneware_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Surrounded_10vs10_CONQ": {
+          "name": "_3x3_Surrounded_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_TripleStrike_10vs10_CONQ": {
+          "name": "_3x3_TripleStrike_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_TwinCities_10vs10_CONQ": {
+          "name": "_3x3_TwinCities_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_UrbanFrontlines_10vs10_CONQ": {
+          "name": "_3x3_UrbanFrontlines_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Valley_10vs10_CONQ": {
+          "name": "_3x3_Valley_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Volcano_10vs10_CONQ": {
+          "name": "_3x3_Volcano_10vs10_CONQ",
+          "mode": 10
+        },
+        "_3x3_Volcano_10vs10_DEST": {
+          "name": "_3x3_Volcano_10vs10_DEST",
+          "mode": 10
+        },
+        "_4x2_DarkStream_10vs10_CONQ": {
+          "name": "_4x2_DarkStream_10vs10_CONQ",
+          "mode": 10
+        },
+        "_4x3_geisa_10vs10_CONQ": {
+          "name": "_4x3_geisa_10vs10_CONQ",
+          "mode": 10
+        },
+        "_4x3_geisa_10vs10_DEST": {
+          "name": "_4x3_geisa_10vs10_DEST",
+          "mode": 10
+        },
+        "_5x2_crown_10vs10_CONQ": {
+          "name": "_5x2_crown_10vs10_CONQ",
+          "mode": 10
+        },
+        "_5x2_crown_10vs10_DEST": {
+          "name": "_5x2_crown_10vs10_DEST",
+          "mode": 10
+        },
+        "_5x2_Loop_10vs10_CONQ": {
+          "name": "_5x2_Loop_10vs10_CONQ",
+          "mode": 10
+        },
+        "_5x2_Loop_10vs10_DEST": {
+          "name": "_5x2_Loop_10vs10_DEST",
+          "mode": 10
+        }
       },
       gameMode: {
         1: "Destruction",
-        2: "Siege",
-        3: "Economy",
-        4: "Conquest"
+        2: "Conquest"
       },
       gameType: {
         0: "NATO vs PACT",
@@ -85,7 +427,7 @@ new Vue({
         0: "None",
         1: "Very low",
         2: "Low",
-        3: "Medium",
+        3: "Normal",
         4: "High",
         5: "Very High"
       },
@@ -154,12 +496,12 @@ new Vue({
         Password: "",
         VictoryCond: 1,
         GameType: 0,
-        Map: "3x3_Marine_3",
+        Map: "_2x2_Hesse_1vs1_CONQ_DUEL",
         Private: 0,
-        InitMoney: 11000,
-        ScoreLimit: 23000,
+        InitMoney: 750,
+        ScoreLimit: 2000,
         TimeLimit: 60,
-        IncomeRate: 4,
+        IncomeRate: 3,
         NbMinPlayer: 20,
         NbMaxPlayer: 20,
         WarmupCountdown: 10,
@@ -399,8 +741,8 @@ new Vue({
         }
       }
 
-      this.info.logs = res.logs.reverse();
-      this.info.messages = res.messages.reverse();
+      //this.info.logs = res.logs.reverse();
+      //this.info.messages = res.messages.reverse();
       this.info.playerList = res.playerList || [];
       this.info.bannedList = res.bannedList;
       this.info.state = res.state;
@@ -430,6 +772,7 @@ new Vue({
 
       let restrict = res.restrict;
 
+      /*
       if(restrict.deck != null && restrict.deck.constructor != Object) {
         restrict.deck = {type: restrict.deck != -1 ? [restrict.deck] : [], blue: restrict.blue, red: restrict.red};
     
@@ -443,6 +786,7 @@ new Vue({
         delete restrict.min;
         delete restrict.max;
       }
+      */
 
       this.current.restrict = restrict;
 

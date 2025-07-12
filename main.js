@@ -155,11 +155,11 @@ io.on('connection', (socket) => {
   
     if(req.key == "Map") {
       let prefix = req.value.VictoryCond == 4 ? 'Conquete' : 'Destruction';
-      commandHandler({host: host, cmd: `setsvar Map ${prefix}_${req.value.Map}`});
+      commandHandler({host: host, cmd: `setsvar Map ${req.value.Map}`});
     } else if(req.key == "VictoryCond") {
       let prefix = req.value.VictoryCond == 4 ? 'Conquete' : 'Destruction';
       commandHandler({host: host, cmd: `setsvar VictoryCond ${req.value.VictoryCond}`});
-      commandHandler({host: host, cmd: `setsvar Map ${prefix}_${req.value.Map}`});
+      commandHandler({host: host, cmd: `setsvar Map ${req.value.Map}`});
     } else if(req.key == "TimeLimit") {
       commandHandler({host: host, cmd: `setsvar TimeLimit ${req.value.TimeLimit * 60}`});
     } else if(req.key == "MaxTeamSize") {
