@@ -1,0 +1,9 @@
+services:
+  wargame-rcon:
+    build:
+      context: .
+    platform: linux/amd64
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8081:8081

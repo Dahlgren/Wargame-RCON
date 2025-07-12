@@ -2,7 +2,7 @@ const fs = require('fs');
 const readline = require('readline');
 const pino = require("pino");
 
-const logger = pino("./rcon.log");
+const logger = pino();
 
 const express = require('express');
 const app = express();
